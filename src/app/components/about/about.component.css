@@ -1,0 +1,63 @@
+.about_me {
+  background-color: #e90e65;
+}
+.about_me .main_img {
+  overflow: hidden;
+}
+.about_me .main_img img {
+  border-radius: 29px 0 0 29px;
+  height: 450px;
+}
+@media (max-width: 767px) {
+  .about_me .main_img img {
+    border-radius: 0;
+  }
+}
+@media (max-width: 767px) {
+  .about_me .container .main_img {
+    padding: 0;
+  }
+  .about_me .container .main_img img {
+    height: 284px;
+    width: 100%;
+  }
+}
+.about_me .about {
+  background-color: white;
+  height: 450px;
+  padding: 80px 30px;
+  border-radius: 0 29px 29px 0;
+}
+@media (max-width: 767px) {
+  .about_me .about {
+    border-radius: 0;
+  }
+}
+.about_me .about h2 {
+  font-size: 29px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0;
+}
+.about_me .about span {
+  color: #afaeae;
+  font-size: 18px;
+}
+.about_me .about .borer_bottom {
+  margin-top: 19px;
+}
+.about_me .about p {
+  color: #979494;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 20px 0;
+}
+.about_me .about .main_btn {
+  margin: 20px auto;
+  background-color: #e90e65;
+}
+.about_me .about .main_btn:hover {
+  background-color: white;
+  color: #e90e65;
+  border: 2px solid #e90e65;
+}

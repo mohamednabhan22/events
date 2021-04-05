@@ -1,0 +1,110 @@
+.main_nav_bar .navbar-toggler {
+  border: 1px solid #e90e65;
+}
+.main_nav_bar span.ic {
+  display: block;
+  background-color: #e90e65;
+  height: 2px;
+  width: 100%;
+  margin-top: 8px;
+  align-items: center;
+}
+.main_nav_bar .bg-light {
+  background-color: #f8f9fa !important;
+}
+.main_nav_bar .bg-light .nav-link {
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.main_nav_bar .bg-light .nav-link:hover {
+  color: #e90e65;
+}
+.main_nav_bar .reset_opacity {
+  background-color: rgba(255, 255, 255, 0);
+}
+.main_nav_bar .reset_opacity .nav-link {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.main_nav_bar .reset_opacity .nav-link:hover {
+  color: #e90e65;
+}
+.main_nav_bar .active a {
+  animation: Colores 3s ease-in-out infinite;
+}
+@keyframes Colores {
+  0% {
+    color: #e90e65;
+  }
+  50% {
+    color: #ccc;
+  }
+  100% {
+    color: #e90e65;
+  }
+}
+@media (max-width: 983px) {
+  .main_nav_bar .navbar-collapse {
+    background-color: #e90e65;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  .main_nav_bar .reset_opacity {
+    padding: 24px 20px;
+  }
+  .main_nav_bar .reset_opacity .nav-link {
+    font-size: 14px;
+  }
+  .main_nav_bar .reset_opacity .nav-link:hover {
+    color: #505050;
+  }
+}
+
+.slide_show {
+  background-image: url(../../../assets/images/banner-img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 850px;
+  align-items: center;
+}
+@media (max-width: 983px) {
+  .slide_show {
+    height: 650px;
+  }
+}
+.slide_show .content {
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.8),
+    black
+  );
+
+  width: 100%;
+  height: 100%;
+  padding-top: 18%;
+}
+.slide_show .content h1 {
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+@media (max-width: 983px) {
+  .slide_show .content h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 983px) {
+  .slide_show .content .main_btn {
+    margin: 32px auto;
+  }
+}

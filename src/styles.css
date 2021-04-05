@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+body,
+html {
+  overflow-x: hidden;
+}
+
+.main_btn {
+  margin: 50px auto;
+  padding: 10px 70px;
+  z-index: 4;
+  background-color: #552f4100;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid #e90e65;
+  border-radius: 28px;
+  animation: moveGradient 4s alternate infinite;
+}
+.main_btn:hover {
+  color: #e90e65;
+}
+
+@keyframes moveGradient {
+  0% {
+    border-color: #e90e65;
+  }
+  50% {
+    border-color: #ccc;
+  }
+}
+.upercase {
+  text-transform: uppercase;
+}
+
+.main_padding {
+  padding: 70px 0;
+}
+
+.color_whitesmoke {
+  color: whitesmoke;
+}
+
+.borer_bottom {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 69px;
+  background-color: #e90e65;
+  margin-top: 19px;
+}
+
+.main_title {
+  font-weight: bold;
+  font-size: 45px;
+  color: #333;
+}
+
+.section_portfolios .box .content_box,
+.section_portfolios .box:hover .content_box,
+.section_portfolios .box,
+.recent_works .box .content_box p,
+.recent_works .box .content_box,
+.recent_works .box:hover .content_box,
+.recent_works .box,
+.section_activity .box .content_box,
+.section_activity .box {
+  transition: all 0.6s ease-in-out;
+}
+
+.section_activity .box .content_box p {
+  transition: all 0.7s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e90e65;
+}
